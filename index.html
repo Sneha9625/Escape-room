@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Escape the Room</title>
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+  <source src="pinterest-video (1).mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+  <h1>Escape the Room</h1>
+   <p>Solve both puzzles to get out of here!</p>
+  <!-- Puzzle 1 -->
+  <div class="container">
+    <h2>Puzzle 1: Logic Number Riddle</h2>
+    <p>I am a 3-digit number.<br>
+       My tens digit is 5 more than my ones digit.<br>
+       My hundreds digit is 8 less than my tens digit.<br>
+       What number am I?</p>
+
+    <input type="text" id="riddle1Input" placeholder="Enter 3-digit number" />
+    <button id="riddle1Button" onclick="checkRiddle1()">Submit</button>
+    <p class="message" id="riddle1Message"></p>
+    <p class="hint" id="hint1">💡 Hint: Start from tens digit. Think 5 more, 8 less.</p>
+  </div>
+
+  <!-- Puzzle 2 -->
+  <div class="container">
+    <h2>Puzzle 2: Word Trick Riddle</h2>
+    <p>There was a plane crash. Every single person died.<br>
+       Who survived?</p>
+
+    <input type="text" id="riddle2Input" placeholder="Your answer here" />
+    <button id="riddle2Button" onclick="checkRiddle2()">Submit</button>
+    <p class="message" id="riddle2Message"></p>
+    <p class="hint" id="hint2">💡 Hint: Think about the word “single”.</p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
